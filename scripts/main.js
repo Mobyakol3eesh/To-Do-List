@@ -38,6 +38,7 @@ function editItem(event) {
     event.stopPropagation();
     const item = event.target.closest('.item');
     const paragragh = item.querySelector('p');
-    const newText = prompt('Edit the text:');
+    var currentText = paragragh.innerText;
+    const newText = prompt('Edit the text: ' + currentText);
     paragragh.innerText = newText;
 }
