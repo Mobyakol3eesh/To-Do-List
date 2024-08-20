@@ -1,7 +1,7 @@
 .list {
     margin-block: 80px;
     h1 {
-        font-family: Gorditas-Regular;
+        font-family: GochiHand-Regular;
         margin-bottom: 64px;
         font-size: 4rem;
     }
@@ -30,8 +30,37 @@
                 }
             }
         }
-        &::-webkit-scrollbar{
+        &::-webkit-scrollbar {
             background-color: transparent;
+        }
+    }
+}
+
+.input {
+    margin-bottom: 80px;
+    .input-group {
+        display: flex;
+        justify-content: space-between;
+        .form-control {
+            border: 2px solid #a4b2e4;
+            flex: none;
+            background: #fff;
+            padding-block: 32px;
+            width: calc(90% - 34px);
+            font-family: K2D-ExtraBold;
+            font-size: 1.5rem;
+        }
+        &:not(.has-validation)
+            > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(
+                .form-floating
+            ) {
+            border-radius: 25px;
+        }
+        &
+            > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(
+                .valid-feedback
+            ):not(.invalid-tooltip):not(.invalid-feedback) {
+            border-radius: 25px;
         }
     }
 }

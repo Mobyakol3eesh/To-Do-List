@@ -11,93 +11,19 @@
         <div class="container list">
             <h1 class="text-center">To Do List</h1>
             <div class="card">
-                <div class="card-body">
-                    <div
-                        class="item d-flex justify-content-between align-items-center"
-                    >
-                        <p class="d-inline">Go To The Gym</p>
-                        <div>
-                            <a class="btn list-btn"
-                                ><img src="images/Pencil Drawing.svg"
-                            /></a>
-                            <a class="btn list-btn"><img src="images/Remove.svg" /></a>
-                        </div>
-                    </div>
-                    <div
-                        class="item d-flex justify-content-between align-items-center"
-                    >
-                        <p class="d-inline">Go To The Gym</p>
-                        <div>
-                            <a class="btn list-btn"
-                                ><img src="images/Pencil Drawing.svg"
-                            /></a>
-                            <a class="btn list-btn"><img src="images/Remove.svg" /></a>
-                        </div>
-                    </div>
-                    <div
-                        class="item d-flex justify-content-between align-items-center"
-                    >
-                        <p class="d-inline">Go To The Gym</p>
-                        <div>
-                            <a class="btn list-btn"
-                                ><img src="images/Pencil Drawing.svg"
-                            /></a>
-                            <a class="btn list-btn"><img src="images/Remove.svg" /></a>
-                        </div>
-                    </div>
-                    <div
-                        class="item d-flex justify-content-between align-items-center"
-                    >
-                        <p class="d-inline">Go To The Gym</p>
-                        <div>
-                            <a class="btn list-btn"
-                                ><img src="images/Pencil Drawing.svg"
-                            /></a>
-                            <a class="btn list-btn"><img src="images/Remove.svg" /></a>
-                        </div>
-                    </div>
-                    <div
-                        class="item d-flex justify-content-between align-items-center"
-                    >
-                        <p class="d-inline">Go To The Gym</p>
-                        <div>
-                            <a class="btn list-btn"
-                                ><img src="images/Pencil Drawing.svg"
-                            /></a>
-                            <a class="btn list-btn"><img src="images/Remove.svg" /></a>
-                        </div>
-                    </div>
-                    <div
-                        class="item d-flex justify-content-between align-items-center"
-                    >
-                        <p class="d-inline">Go To The Gym</p>
-                        <div>
-                            <a class="btn list-btn"
-                                ><img src="images/Pencil Drawing.svg"
-                            /></a>
-                            <a class="btn list-btn"><img src="images/Remove.svg" /></a>
-                        </div>
-                    </div>
-                    <div
-                        class="item d-flex justify-content-between align-items-center"
-                    >
-                        <p class="d-inline">Go To The Gym</p>
-                        <div>
-                            <a class="btn list-btn"
-                                ><img src="images/Pencil Drawing.svg"
-                            /></a>
-                            <a class="btn list-btn"><img src="images/Remove.svg" /></a>
-                        </div>
-                    </div>
+                <div class="card-body" id="card-body">
                 </div>
             </div>
-            <div class="container">
-                <div class="input-group">
-                    <input type="text" class="form-control" />
-                    <button class="btn btn-outline-secondary" type="button">
-                        ADD
-                    </button>
-                </div>
+        </div>
+        <div class="container input">
+            <div class="input-group">
+                <input type="text" class="form-control" id="item-input" />
+                <button
+                    class="btn btn-outline-secondary add-item-btn"
+                    type="button" id="add-btn" onclick="addItem()"
+                >
+                    ADD
+                </button>
             </div>
         </div>
         <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

@@ -1,6 +1,6 @@
 @font-face {
-  font-family: Gorditas-Regular;
-  src: url("../../fonts/Gorditas-Regular.ttf"); }
+  font-family: GochiHand-Regular;
+  src: url("../../fonts/GochiHand-Regular.ttf"); }
 @font-face {
   font-family: K2D-ExtraBold;
   src: url("../../fonts/K2D-ExtraBold.ttf"); }
@@ -13,8 +13,11 @@ img {
   max-width: 100%; }
 
 html {
-  font-size: 16px;
-  font-family: K2D-ExtraBold; }
+  font-size: 16px; }
+
+.btn {
+  font-family: K2D-ExtraBold;
+  font-size: 1.5rem; }
 
 .list-btn {
   width: 50px;
@@ -26,10 +29,19 @@ html {
      -moz-margin-start: 6px;
           margin-inline-start: 6px; }
 
+.add-item-btn {
+  padding-block: 32px;
+  color: white;
+  width: 10%;
+  background-color: #A4B2E4;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-color: transparent; }
+
 .list {
   margin-block: 80px; }
   .list h1 {
-    font-family: Gorditas-Regular;
+    font-family: GochiHand-Regular;
     margin-bottom: 64px;
     font-size: 4rem; }
   .list .card {
@@ -56,3 +68,31 @@ html {
           font-size: 2rem; }
     .list .card::-webkit-scrollbar {
       background-color: transparent; }
+
+.input {
+  margin-bottom: 80px; }
+  .input .input-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .input .input-group .form-control {
+      border: 2px solid #a4b2e4;
+      -webkit-box-flex: 0;
+          -ms-flex: none;
+              flex: none;
+      background: #fff;
+      padding-block: 32px;
+      width: calc(90% - 34px);
+      font-family: K2D-ExtraBold;
+      font-size: 1.5rem; }
+    .input .input-group:not(.has-validation)
+    > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating
+    ) {
+      border-radius: 25px; }
+    .input .input-group
+    > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback
+    ):not(.invalid-tooltip):not(.invalid-feedback) {
+      border-radius: 25px; }
